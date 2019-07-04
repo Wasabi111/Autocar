@@ -12,5 +12,7 @@ Chanllenges:
 Results:
 
 How to import our code:
+The IMU package is a subscriber for ROS to get some location info of our auto car, for example the turning angle.
+The Image package has the code for RealSense camera depth information. We took some blocks on the image to represent the distance from left, right and straight. This would be used at determine whether the car needs to make a turn and adjust its angle when not going very straight.
 
 Credit to our team.
