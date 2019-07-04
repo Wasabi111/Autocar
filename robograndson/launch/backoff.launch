@@ -1,0 +1,19 @@
+<launch>
+  <!--<arg name="ms_ip" default="rock64" />-->
+  <!--<arg name="nb_ip" default="$(env ROS_NB_IP)" />-->
+
+  <!--<machine name="ms" address="$(arg ms_ip)" user="rock64" />-->
+  <node pkg="pololu" type="pololuControl" name="motor" />
+  <node pkg="image_pkg" type="backoff" name="backoff" />
+  <include file="$(find realsense2_camera)/launch/rs_camera_reduced.launch" />
+
+  <!--<machine name="nb"
+           address="$(arg nb_ip)"
+           user="sayter"
+           env-loader="/home/sayter/ros_ws/scripts/env.sh"
+           ssh-port="22"
+           timeout="20" />
+  <node machine="nb" pkg="pololu" type="keyboardControl" name="keyboardControl" />-->
+  
+</launch>
+
