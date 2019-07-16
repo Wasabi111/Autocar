@@ -32,9 +32,8 @@ To complete this final project, we adopt to develop our programs on ROS (Robotic
 
 First, we use ROS to control the RealSense D435i to detect the surrounds, and it will publish a topic named ‘/camera/depth/image_rect_raw’ which returns the depth information of the environment. Then we create a subscriber to subscribe the message and convert it to OpenCV image using cv_bridge package in the callback function.  After that, we create three small square windows, located at left, middle and right of the image, then we calculate the mean of the depth value for each square window to represent the distance from the car to the left wall, the front, and the right wall, respectively.
 
-![](picture/car3.jpg)
+![](picture/car3.jpg) ![](picture/car4.jpg)
 
-![](picture/car4.jpg)
 
 Chanllenges:
 
