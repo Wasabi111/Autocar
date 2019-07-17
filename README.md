@@ -45,6 +45,7 @@ First, we use ROS to control the RealSense D435i to detect the surrounds, and it
 
 ![](picture/car3.jpg)                           ![](picture/car4.jpg)
 
+Blue boxes are our detection area.
 
 ## Challenges:
 
@@ -112,7 +113,6 @@ The car starts backing to a certain distance
 ![](picture/car13.jpg)
 
 The car continues driving
-
 
 ## Results
 
