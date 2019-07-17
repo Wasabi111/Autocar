@@ -56,9 +56,13 @@ Autocar should consider pedestrains who might get in the way of car and avoid co
 
 We test our algorithm for several times, and the car will avoid the ball with 80% ratio of success. Also, we should note that this challenge also depends on the speed and direction of the rolling ball. But overall, our algorithm can handle most situations, and it would fail if the rolling ball is too fast for the car to respond. 
 
-![](picture/car9.jpg)        ![](picture/car10.jpg)  
+![](picture/car9.jpg)          
 
-A ball rolls to the car      The car avoid the ball
+A ball rolls to the car      
+
+![](picture/car10.jpg)
+
+The car avoid the ball
 
 ### Detect stop sign
 
@@ -68,9 +72,17 @@ The stop sign is basically a red circle. Considering there isn’t any other red
 
 In this challenge, we print out the stop sign and put it at a distance before the car. 
 
-![](picture/car14.jpg)  ![](picture/car15.jpg)  ![](picture/car16.jpg)    
+![](picture/car14.jpg)
 
-The car is driving along the road  The car stops at sign  After 3 seconds the car continues driving
+The car is driving along the road  
+
+![](picture/car15.jpg) 
+
+The car stops at sign  
+
+![](picture/car16.jpg)
+
+After 3 seconds the car continues driving
 
 Then the car will recognize the stop sign, as long as it detects the stop sign, the car will stop right before the sign for about 3 seconds. Afterwards, the car will continue driving and pass the stop sign. From the following figures, we can find that our algorithm did a quite good job. We test this challenge for several times, and every time the car will stop right before the stop sign, which is quite reliable and robust. 
 
@@ -89,9 +101,17 @@ Then we change the status into ‘Back’ and this status will last until the ca
 
 We test our algorithm for several times, and for this challenge, the car will always detect the barrier and accomplish the back motion. 
 
-![](picture/car11.jpg) ![](picture/car12.jpg) ![](picture/car13.jpg)
+![](picture/car11.jpg) 
 
-The car runs into a collision  The car starts backing to a certain distance The car continues driving
+The car runs into a collision 
+
+![](picture/car12.jpg) 
+
+The car starts backing to a certain distance 
+
+![](picture/car13.jpg)
+
+The car continues driving
 
 
 ## Results
