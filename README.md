@@ -26,7 +26,7 @@ The outlook of the race car
 To complete this final project, we adopt to develop our programs on ROS (Robotics Operating System). Because of the active community and the rich packages for controlling robots, ROS is the best platform for us. In addition, ROS provides versatile tools such as rosbag, rqt_console, and RViZ. To drive all devices on ROS, we install Ubuntu 18.04 on our Rock64 board and install ROS Melodic as well. Next, we utilize librealsense to integrate RealSense D435i and RapaPololuMaestro to control the Pololu controller to control the motors on the car. Finally, to make sure each part works well, we implement a keyboard control program on ROS. Through this program, we can control motors and receive sensor data. Moreover, this program can be incorporated with rosbag and help us debugging.
 
 ## Operation algorithm and race
-![](picture/car5.jpg)
+![](picture/car5.png)
 From the flow chart, you can see we create 6 statuses, which are Stop, Straight, Straight Left (small left turn), Straight Right (small right turn), Turn Right and Turn Left. We also create one node to publish the status, and the other node to subscribe this topic and update the status based on state machine. 
 
 If the subscriber didn’t receive any data, it would get in Stop status. If the subscriber receives the data, the default status would be straight. The straight status will last until the depth of the middle window drop into certain range. Then we will update the status from straight to Turn Left or Turn Right based on the comparison between the left depth and right depth. Afterwards, the Turn Left or Turn Right status will last until the front depth again becomes enough large, then the status would change to Straight. 
@@ -53,7 +53,7 @@ Blue boxes are our detection area.
 
 Autocar should consider pedestrains who might get in the way of car and avoid collision with them or other obstacles.This challenge requires our race car to avoid a rolling ball from about 5 meters away with a speed of 1 meter per second. The time limitation for our race car to react is the main difficulty. To detect the rolling ball better, we adjust and add some detection area in our RealSense camera. The former design of detection areas of camera for speed race positions relatively high. To detect walls and doors which are big enough, we do not need a very board detection area which required more time to process in Rock 64 CPU. In real time, depth data of RealSense camera in higher places is more stable than in lower places because of its detection range limitation. For speed race, we prefer detecting high for a robust race car performance. Nevertheless, for this challenge, we cannot do that since the rolling ball is much smaller than a wall or a door and it is moving. 
 
-![](picture/car7.png)   
+![](picture/car7.jpg)   
 
 We test our algorithm for several times, and the car will avoid the ball with 80% ratio of success. Also, we should note that this challenge also depends on the speed and direction of the rolling ball. But overall, our algorithm can handle most situations, and it would fail if the rolling ball is too fast for the car to respond. 
 
