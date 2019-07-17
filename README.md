@@ -107,7 +107,7 @@ The implementation of our designed algorithm demonstrates that the race car real
 ## How to import our code:
 
 The IMU package is a subscriber for ROS to get some location info of our auto car, for example the turning angle.
-The Image package has the code for RealSense camera depth information. We took some blocks on the image to represent the distance from left, right and straight. This would be used at determine whether the car needs to make a turn and adjust its angle when not going very straight. All challenge code are in the robot grandson folder.
+The Image package has the code for RealSense camera depth information. We took some blocks on the image to represent the distance from left, right and straight. This would be used at determine whether the car needs to make a turn and adjust its angle when not going very straight. Codes are in C++ and Python.
 
 More information about how to install ubuntu 16.04 and ROS, you could find here: https://github.com/Wasabi111/HRI_Interruption-/tree/master/openface_ros. Thanks for Chi-Ju Wu and Chi Chen.
 
