@@ -79,7 +79,7 @@ Then the car will recognize the stop sign, as long as it detects the stop sign, 
 
 When collision happens in real life, people tend to back up, check and continue drive if there is no damage. Even if we teach the auto car to avoid obstacles, collisions still have a little possibility to happen. We need to teach the auto car how to back up and continue driving in that case.
 
-The basic logic is consistent with what we did in the race part, except that for this challenge, we will add another if condition with the highest priority. If we detect the depth of the center, left, and right of the frame are all less than certain threshold, then it means the car is running across an obstacle (as shown in figure 8). 
+The basic logic is consistent with what we did in the race part, except that for this challenge, we will add another if condition with the highest priority. If we detect the depth of the center, left, and right of the frame are all less than certain threshold, then it means the car is running across an obstacle. 
 
 ![](picture/car8.jpg)   
 
@@ -103,6 +103,6 @@ The implementation of our designed algorithm demonstrates that the race car real
 The IMU package is a subscriber for ROS to get some location info of our auto car, for example the turning angle.
 The Image package has the code for RealSense camera depth information. We took some blocks on the image to represent the distance from left, right and straight. This would be used at determine whether the car needs to make a turn and adjust its angle when not going very straight. Codes are in C++ and Python.
 
-More information about how to install ubuntu 16.04 and ROS, you could find here: https://github.com/Wasabi111/HRI_Interruption-/tree/master/openface_ros. Thanks for Chi-Ju Wu and Chi Chen.
+More information about how to install ubuntu 16.04 and ROS, you could find here: https://github.com/Wasabi111/HRI_Interruption-/tree/master/openface_ros. Thanks to Chi-Ju Wu and Chi Chen.
 
 Credit to our team.
